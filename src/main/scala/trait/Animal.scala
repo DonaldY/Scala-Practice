@@ -1,0 +1,5 @@
+package `trait`
+
+class Animal {
+
+}
