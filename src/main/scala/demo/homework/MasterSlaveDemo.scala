@@ -81,7 +81,7 @@ class Master {
 
           if (second > 5) {
 
-            println(s"master 移除 ： $k")
+            println(s"时间： $currDate , master 移除 ： $k")
             workerMap -= k
           }
         }
@@ -93,7 +93,9 @@ class Master {
 
   def updateWorker(workerName: String): Unit = {
 
-    println(s"master 接收 $workerName 的 heartbeat ")
+    val currDate = new Date()
+
+    println(s"时间： $currDate , master 接收 $workerName 的 heartbeat ")
 
     workerMap += (workerName -> new Date())
   }
