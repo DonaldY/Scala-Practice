@@ -6,6 +6,12 @@ import scala.beans.BeanProperty
   * @author donald
   * @date 2020/11/25
   */
+/*
+UserA,LocationA,8,60
+UserA,LocationA,9,60
+UserB,LocationB,10,60
+UserB,LocationB,11,80
+ */
 object UserLocationStat extends App {
 
   val userList: List[UserLocation] = List(new UserLocation("UserA", "LocationA", 8, 60),
